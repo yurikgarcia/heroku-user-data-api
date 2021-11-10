@@ -1,7 +1,6 @@
 // Update with your config settings.
 require("dotenv").config();
-console.log(`THE URL`,process.env.DATABASE_URL)
-const s = require('./')
+
 module.exports = {
 
   development: {
