@@ -1,0 +1,21 @@
+{
+  "name": "dummy-users-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dummy_data.js",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "knex": "^0.95.14",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start":"npx knex migrate:latest && npx knex seed:run && node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
