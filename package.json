@@ -13,7 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start":"npx knex migrate:latest && npx knex seed:run && node server.js",
+    "start":"npx knex migrate:latest && npx knex seed:run && node server.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

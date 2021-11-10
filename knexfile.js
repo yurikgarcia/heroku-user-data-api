@@ -1,8 +1,10 @@
 // Update with your config settings.
-require("dotenv").config();
+require("dotenv").config(); // NEED THIS IF USING DOTENV PACKAGE FOR LOCAL DEVELOPMENT
 
+
+// THIS IS YOUR PRODUCTION CONNECTION - NOTE THE SSL SETTING
 const connection = {
-  connectionString: process.env.DATABASE_URL,
+  connectionString: process.env.DATABASE_URL, // IMPORTANT - HEROKU SETS THIS AND CHANGES IT PERIODICALLY
   ssl: {
     rejectUnauthorized: false,
   },
