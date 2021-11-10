@@ -1,7 +1,7 @@
 // Update with your config settings.
 require("dotenv").config();
 
-const connection = {
+const sslConnection = {
   connectionString: process.env.DATABASE_URL,
   ssl: {
     rejectUnauthorized: false,
@@ -11,7 +11,7 @@ const connection = {
 module.exports = {
   development: {
     client: "pg",
-    connection,
+    connection: process.env.DATABASE_URL,
   },
 
   staging: {
