@@ -1,7 +1,7 @@
 // Update with your config settings.
 require("dotenv").config();
 
-const sslConnection = {
+const connection = {
   connectionString: process.env.DATABASE_URL,
   ssl: {
     rejectUnauthorized: false,

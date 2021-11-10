@@ -7,7 +7,7 @@ function getAllUsers() {
     .then((data) => data);
 }
 function getOneUserById(id){
-  return db('users').where({id:id}).select('*').then(data=>data);
+  return db('users').where({id: +id}).then(data=>data);
 }
 
 module.exports = { getAllUsers, getOneUserById };
